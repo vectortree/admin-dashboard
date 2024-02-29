@@ -1,0 +1,163 @@
+:root {
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --sky-500: #0ea5e9;
+	--sky-600: #0284c7;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.dashboard-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template: 1fr 3fr / 1fr 4fr;
+}
+
+.dashboard-header {
+  background-color: white;
+  grid-area: 1 / 2 / 2 / 3;
+  display: grid;
+  grid-template: repeat(2, 1fr) / 1fr;
+  padding-left: 3rem;
+  padding-right: 4rem;
+	padding-bottom: 1rem;
+	padding-top: 0.25rem;
+	gap: 1rem;
+	position: relative;
+	box-shadow: 0 4px 7px 0 rgb(0, 0, 0, 0.2);
+}
+
+.header-top {
+  display: flex;
+  gap: 6rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.header-top > .search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search > label {
+  display: flex;
+  align-items: center;
+}
+
+.header-top input[type="search"] {
+  flex: 1;
+  max-width: 800px;
+  background-color: var(--slate-200);
+  border-style: none;
+  border-radius: 1rem;
+  padding: 0.55rem 1rem;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.header-top > .side {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.side > .icon:hover,
+.profile {
+  cursor: pointer;
+}
+
+.dashboard-header .icon {
+  width: min(50px, 1.75rem);
+}
+
+.header-top .icon.profile {
+  width: min(100px, 3.25rem);
+  background-color: red;
+  border-radius: 50%;
+  padding: min(10px, 0.3rem);
+}
+
+.header-bottom {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.header-bottom > .user-greeting {
+	display: flex;
+	column-gap: 1.5rem;
+	padding-left: 0.25rem;
+	align-items: center;
+}
+
+.user-greeting > .profile {
+	width: min(150px, 4.75rem);
+  background-color: red;
+  border-radius: 50%;
+  padding: min(10px, 0.3rem);
+}
+
+.user-greeting > .greeting-text {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+	font-weight: 700;
+}
+
+.greeting-text span:nth-child(2) {
+	font-size: 1.75rem;
+}
+
+.header-bottom > .buttons {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+}
+
+.buttons > * {
+	cursor: pointer;
+	border-radius: 2rem;
+	border-style: none;
+	background-color: var(--sky-500);
+	color: white;
+	font-weight: 600;
+	font-size: 1.1rem;
+	font-family: "Roboto", sans-serif;
+	width: min(175px, 7rem);
+	height: min(70px, 2.75rem);
+}
+
+.buttons > *:hover {
+	background-color: var(--sky-600);
+}
+
+.dashboard-sidebar {
+  background-color: var(--sky-500);
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.dashboard-main {
+  background-color: var(--slate-300);
+  grid-area: 2 / 2 / 3 / 3;
+}

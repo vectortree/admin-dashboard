@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <header class="dashboard-header">
+        <div class="header-top">
+          <div class="search">
+            <label for="search-bar">
+              <img
+                class="icon"
+                src="./assets/magnify.svg"
+                alt="Magnifying glass icon"
+              />
+            </label>
+            <input type="search" id="search-bar" placeholder="Search" />
+          </div>
+          <div class="side">
+            <img
+              class="icon"
+              src="./assets/bell-ring-outline.svg"
+              alt="Bell ring icon"
+            />
+            <img
+              class="icon profile"
+              src="./assets/dragon.png"
+              alt="Chinese dragon icon"
+            />
+            <span>Morgan Oakley</span>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="user-greeting">
+            <img
+              class="icon profile"
+              src="./assets/dragon.png"
+              alt="Chinese dragon icon"
+            />
+            <div class="greeting-text">
+              <span>Hi there,</span>
+              <span>Morgan Oakley (<a href="#">@morgan</a>)</span>
+            </div>
+          </div>
+          <div class="buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
+      </header>
+      <section class="dashboard-sidebar"></section>
+      <main class="dashboard-main"></main>
+    </div>
+  </body>
 </html>
