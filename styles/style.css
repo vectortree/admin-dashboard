@@ -90,8 +90,9 @@ body {
 }
 
 .side > .icon:hover,
-.profile {
+.profile:hover {
   cursor: pointer;
+  opacity: 0.6;
 }
 
 .dashboard-header .icon {
@@ -246,6 +247,7 @@ body {
   overflow: scroll;
   max-height: 60vh;
   padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
 }
 
 .projects-container > ul > li {
