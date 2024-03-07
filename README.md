@@ -1,3 +1,3 @@
 # Admin Dashboard
 
-Here's a neat example of a modern web page built with CSS Grid and Flexbox layouts. Enjoy!
+Here's a neat example of a modern responsible web page built with the CSS Grid and Flexbox layouts. Enjoy!
