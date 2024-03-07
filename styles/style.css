@@ -481,6 +481,10 @@ a {
     grid-template-rows: repeat(3, min-content);
   }
 
+  .dashboard-sidebar {
+    display: none;
+  }
+
   .dashboard-header {
     max-height: max-content;
   }
