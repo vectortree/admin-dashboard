@@ -336,7 +336,12 @@ a {
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  padding-bottom: 0.1rem;
+}
+
+.announcements-container > ul span,
+.trending-container span:last-of-type,
+.projects-container > ul > li > span:last-of-type {
+  line-height: 1rem;
 }
 
 .announcements-container > ul > li > span:first-of-type {
