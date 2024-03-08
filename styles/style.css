@@ -339,8 +339,9 @@ a {
 }
 
 .announcements-container > ul span,
-.trending-container span:last-of-type,
-.projects-container > ul > li > span:last-of-type {
+.trending-container span,
+.trending-container a,
+.projects-container > ul > li > span {
   line-height: 1rem;
 }
 
